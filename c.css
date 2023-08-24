@@ -1,0 +1,32 @@
+*{
+    margin:auto;
+}
+.box{
+    width:40%;
+    margin:Auto;
+}
+table{
+    border:1px solid black;
+    width:60%;
+    display:grid;
+}
+.display{
+    width:60%;
+    margin:30px auto;
+    height:100px;
+    border:2px solid black;
+    border-radius:25px;
+    text-align: center;
+}
+.display #ok{
+    margin:10% auto;
+}
+input[type="button"]{
+    width:90px;
+    height:70px;
+    margin:5px;
+    border-radius:20px;
+}
+table tr{
+    display:flex;
+}
