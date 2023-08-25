@@ -1,0 +1,217 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: brown;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color:#fff;
+    margin:auto 100px;
+}
+header h1::first-letter{
+    color:black;
+    font-size: 60px;
+}
+header h1 span{
+    color:red;
+    font-size: 60px;;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin:auto 100px;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin:20px;
+    color:#fff;
+}
+nav ul li:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color:#000;
+}
+marquee{
+    margin: 10px 0;
+}
+.offer{
+    width:70%;
+  height:500px;
+    margin:10px auto;
+    position:relative;
+}
+.offer .numbertext{
+    font-size:25px;
+    text-align:center;
+}
+.offer img{
+    border-radius: 25px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.divider{
+    width:80%;
+    height:5px;
+  margin:20px auto;
+    background-color:red;
+    border: 2px red;
+    border-radius: 25px;
+}
+.booking h1,.booking h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+.booking h1{
+    font-size: 50px;
+}
+.bookingcontainer{
+    width: 70%;
+    height: 650px;
+    margin: 20px auto;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+.btn{
+    position: absolute;
+    top:690px;
+    left:40%;
+  background-color:red;
+  width:200px;
+  height:50px;
+  font-size:25px;
+  text-align:center;
+  border-radius:25px;
+}
+.btn:hover{
+    cursor: pointer;
+    border:2px black;
+    padding:8px;
+}
+.bookingcontainer .booknav{
+    width:100%;
+    position: absolute;
+    top:0;
+    height:70px;
+    background-color: rgb(91, 49, 29);
+}
+.pnav{
+    position: absolute;
+    top:70px;
+  width:30%;
+  height:580px;
+  background-color:black;
+}
+.pnav ul{
+    flex-direction: column;
+  margin:50px 0;
+}
+.pnav ul li{
+  margin:50px;
+  font-family:sans-serif;
+  font-size:25px;
+}
+.booking .booknav nav ul li{
+    color:black;
+}
+.pnav ul li:hover{
+    color:red;
+    cursor: pointer;
+    font-size: 27px;
+}
+.pizza .veg,.pizza .nonveg{
+  position:absolute;
+  top:70px;
+  left:300px;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+.pizza .veg .price,.pizza .nonveg .nonprice{
+  background-color:white;
+  border-radius:25px;
+  width:180px;
+  margin:10px;
+  height:270px;
+  text-align:center;
+  align-items:center;
+  font-size:12px;
+}
+.pizza .veg .price:hover,.pizza .nonveg .nonprice:hover,.drink .dprice:hover,.dessert .deserrtprice:hover{
+    cursor:pointer;
+    width:185px;
+    background-color:rgba(252, 176, 145, 0.803);
+    height:275px;
+  }
+.pizza .veg img,.pizza .nonveg img{
+  width:150px;
+  margin:10px;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.drink,.dessert{
+    position:absolute;
+  top:70px;
+  display:flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+  
+}
+.dessert{
+    top:120px;
+    left:100px;
+}
+.drink .dprice,.dessert .deserrtprice{
+    background-color:white;
+  border-radius:25px;
+  width:180px;
+  margin:10px;
+  height:270px;
+  text-align:center;
+  align-items:center;
+  font-size:12px;
+}
+.drink img,.dessert img{
+    width:150px;
+  margin:10px;
+}
+.contact{
+    margin:150px 0 0 0;
+    text-align:center;
+    color:white;
+    background-color:black;
+  }
