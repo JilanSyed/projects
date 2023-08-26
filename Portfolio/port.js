@@ -1,0 +1,121 @@
+x=document.querySelector(".edu");
+y=document.querySelector(".educ");
+skil=document.querySelector(".skills");
+no=document.querySelector(".skill");
+a=document.querySelector(".cert");
+b=document.querySelector(".certi");
+c=document.querySelector(".hobb");
+d=document.querySelector(".hob");
+x.addEventListener('click',()=>{
+    y.classList.remove("none");
+    y.classList.add("block");
+    no.classList.remove("block");
+    no.classList.add("none");
+    b.classList.remove("block");
+    b.classList.add("none");
+    d.classList.remove("block");
+    d.classList.add("none");
+    x.classList.add("ok");
+    skil.classList.remove("ok");
+    a.classList.remove("ok");
+    c.classList.remove("ok");
+})
+skil.addEventListener('click',()=>{
+    y.classList.remove("block");
+    y.classList.add('none');
+    no.classList.remove("none");
+    no.classList.add("block");
+    b.classList.remove("block");
+    b.classList.add("none");
+    d.classList.remove("block");
+    d.classList.add("none");
+    x.classList.remove("ok");
+    skil.classList.add("ok");
+    a.classList.remove("ok");
+    c.classList.remove("ok");
+})
+a.addEventListener('click',()=>{
+    b.classList.remove("none");
+    b.classList.add("block");
+    y.classList.remove("block");
+    y.classList.add('none');
+    no.classList.remove("block");
+    no.classList.add("none");
+    d.classList.remove("block");
+    d.classList.add("none");
+    x.classList.remove("ok");
+    skil.classList.remove("ok");
+    a.classList.add("ok");
+    c.classList.remove("ok");
+})
+c.addEventListener('click',()=>{
+    d.classList.remove("none");
+    d.classList.add("block");
+    b.classList.remove("block");
+    b.classList.add("none");
+    y.classList.remove("block");
+    y.classList.add('none');
+    no.classList.remove("block");
+    no.classList.add("none");
+    x.classList.remove("ok");
+    skil.classList.remove("ok");
+    a.classList.remove("ok");
+    c.classList.add("ok");
+})
+
+hom=document.querySelector(".home");
+ho=document.querySelector(".homem");
+abou=document.querySelector(".about");
+ab=document.querySelector(".aboutm");
+res=document.querySelector('.resume');
+re=document.querySelector(".resumem");
+cont=document.querySelector('.contact');
+con=document.querySelector(".contactm");
+hom.addEventListener('click',()=>{
+    ho.classList.remove("none");
+    ab.classList.add('none');
+    re.classList.add("none");
+    con.classList.add("none");
+    hom.classList.add("act");
+    abou.classList.remove("act");
+    res.classList.remove("act");
+    cont.classList.remove("act");
+})
+abou.addEventListener('click',()=>{
+    ab.classList.remove("none");
+    ho.classList.add("none");
+    re.classList.add("none");
+    con.classList.add("none");
+    abou.classList.add("act");
+    hom.classList.remove("act");
+    res.classList.remove("act");
+    cont.classList.remove("act");
+})
+res.addEventListener('click',()=>{
+    re.classList.remove("none");
+    ab.classList.add("none");
+    ho.classList.add("none");
+    con.classList.add("none");
+    hom.classList.remove("act");
+    abou.classList.remove("act");
+    res.classList.add("act");
+    cont.classList.remove("act");
+})
+cont.addEventListener('click',()=>{
+    con.classList.remove("none");
+    ho.classList.add("none");
+    ab.classList.add('none');
+    re.classList.add("none");
+    hom.classList.remove("act");
+    abou.classList.remove("act");
+    res.classList.remove("act");
+    cont.classList.add("act");
+})
+const downloadButton = document.getElementById("download");
+downloadButton.addEventListener("click", () => {
+    const pdfSrc = 'ABDUL JILAN.pdf';
+    const anchor = document.createElement("a");
+    anchor.href = pdfSrc;
+    anchor.download = "ABDUL JILAN.pdf";
+    anchor.click();
+});

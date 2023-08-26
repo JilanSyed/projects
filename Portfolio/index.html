@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="name">
+            <h2>Syed</h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="home act">Home</li>
+                <li class="about">About Me</li>
+                <li class="resume">Resume</li>
+                <li class="project"><a href="https://github.com/JilanSyed/projects">Projects</a></li>
+                <li class="contact">Contact Me</li>
+            </ul>
+        </nav>
+        <ul class="social-icons">
+            <li><a href="#" onclick="alert('current not avaliable');"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" onclick="alert('current not avaliable');"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/JilanSyed/projects"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/syed-abdul-jilan-67379720a/"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="homem ">
+            <div class="text">
+                <h2>Hi I'm Syed Abdul Jilan <br>I'm a  <span id="element"></span></h2>
+                <p>I can write clean, efficient, and maintainable code.I excel at breaking down big challenges into smaller, manageable chunks and coming up with creative solutions.
+                    <br> I have a logical and analytical approach that helps me to efficiently solve issues. I am versatile and quick to learn new languages, frameworks, and tools to stay current in the profession.</p>
+            </div>
+            <img  class="pic" src="photo.jpeg" alt="">
+        </div>
+        <div class="aboutm none">
+            <div class="firstc ">
+                <h1>About Me</h1>
+            </div>
+            <div class="secondc ">
+                <ul>
+                    <li class="edu ok">Education</li>
+                    <li class="cert">certificates</li>
+                    <li class="skills">skills</li>
+                    <li class="hobb">Hobbies</li>
+                </ul>
+            </div>
+            <div class="thirtc ">
+                <div class="educ" id="edu">
+                    <ul>
+                        <li>
+                            <h2>B.E (Electrical and Electronic Engineering)</h2>
+                            <h3>Muffakham Jah College of Engineering and technology</h3>
+                            <p>year:2018-2022</p>
+                            <p>percentage - 76.7%</p>
+                        </li>
+                        <li>
+                            <h2>Intermediate (M.P.C)</h2>
+                            <h3>Narayana Jr. College</h3>
+                            <p>year:2016-2018</p>
+                            <p>percentage - 89.1%</p>
+                        </li>
+                        <li>
+                            <h2>SSC</h2>
+                            <h3>Castle Town High School</h3>
+                            <p>year:2015-2016</p>
+                            <p>percentage - 77%</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="certi none" id="cer">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><a href="https://trainings.internshala.com/verify-certificate/?certificate_number=2F3782A5-D709-664D-DC7A-65FB7B80F4BC">Programming with Python</a></li>
+                        <li><a href="https://www.hackerrank.com/certificates/a57f7bdd678f">Python (Basic)</a></li>
+                        <li><a href="https://www.freecodecamp.org/certification/fcc14777983-2cd0-4821-bb96-595ffd5ebe3b/responsive-web-design">Responsive Web Design</a></li>
+                        <li><a href="https://www.sololearn.com/Certificate/CT-BLFGLGK2/pdf">HTML</a></li>
+                        <li><a href="https://api2.sololearn.com/v2/certificates/CC-LN8QSGYO/image/png">Introduction to SQL</a></li>
+                    </ul>
+                </div>
+                <div class="skill none" id="skil">
+                    <ol>
+                        <li>
+                            <ul>
+                                <h3>Programming languages:</h3>
+                                <li>Python</li>
+                                <li>C lang</li>
+                                <li>java</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <h3>Web Development tools:</h3>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul><h3>DataBase Management system</h3><li>SQL</li></ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="hob none" id="ho">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Playing cricket</li>
+                        <li>Reading Books</li>
+                        <li>video games</li>
+                        <li>Blogging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="resumem none">
+            <h1>Resume</h1>
+            <button id="download">Download PDF</button>
+            <div class="pdf">
+                <iframe src="ABDUL JILAN.pdf"></iframe>
+            </div>
+        </div>
+        <div class="contactm none">
+            <h1>Contact Me</h1>
+            <form action="">
+                <input type="text" placeholder="first Name" required>
+                <input type="text" placeholder="last Name" required>
+                <input type="email" placeholder="abc@gmail.com" required>
+                <input type="text" placeholder="Company" required>
+                <input type="number" placeholder="+91-xxxxxxxxxx" required>
+                <textarea placeholder="Address" cols="30" rows="5" required></textarea>
+                <textarea placeholder="Feedback" cols="30" rows="2"></textarea>
+                <button class="formbtn">Submit</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="port.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+        strings: ['Web Designer','Python Programmer','Learner','Web Developer'],
+        typeSpeed: 100,
+    });
+    </script>
+</body>
+</html>
